@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microestudio NovaFrame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">NovaFrame</div>
+      <button class="contact-btn" data-scroll="contacto">Hablemos</button>
+    </nav>
+    <div class="hero__content">
+      <span class="badge">Estudio boutique de animación</span>
+      <h1>Microestudio especializado en experiencias interactivas</h1>
+      <p>
+        Diseñamos narrativas digitales que combinan ilustración, animación 2D y microinteracciones
+        construidas con GSAP. Desarrollamos sitios web y activaciones con transiciones fluidas para marcas
+        que quieren deslumbrar.
+      </p>
+      <div class="hero__actions">
+        <button class="primary" data-scroll="proyectos">Ver proyectos</button>
+        <button class="secondary" data-scroll="servicios">Nuestros servicios</button>
+      </div>
+    </div>
+    <div class="hero__orb" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="section section--light" id="servicios">
+      <div class="section__header">
+        <span class="subtitle">Qué hacemos</span>
+        <h2>Servicios centrados en la animación y la interacción</h2>
+      </div>
+      <div class="grid grid--services">
+        <article class="card">
+          <h3>Landing pages cinemáticas</h3>
+          <p>
+            Storyboards, diseño y desarrollo frontend para sitios de campaña con animaciones sincronizadas
+            con scroll y navegación.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Activaciones interactivas</h3>
+          <p>
+            Escenas WebGL, partículas y efectos de física combinados con GSAP para experiencias memorables en eventos o lanzamientos.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Motion branding</h3>
+          <p>
+            Sistemas de motion para reforzar identidades visuales con microinteracciones consistentes en plataformas digitales.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="proyectos">
+      <div class="section__header">
+        <span class="subtitle">Portafolio destacado</span>
+        <h2>Transiciones fluidas, historias memorables</h2>
+      </div>
+      <div class="grid grid--projects">
+        <article class="project-card" data-project="orbita">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__content">
+            <h3>Órbita Sonora</h3>
+            <p>
+              Instalación musical interactiva donde las notas generan ondas de luz animadas con GSAP y audio reactivo.
+            </p>
+            <span class="project-card__tag">WebGL · GSAP Timeline</span>
+          </div>
+        </article>
+        <article class="project-card" data-project="aurora">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__content">
+            <h3>Aurora XR</h3>
+            <p>
+              Showcase inmersivo para un dispositivo XR con transiciones que mezclan video, partículas y desplazamiento suave.
+            </p>
+            <span class="project-card__tag">ScrollTrigger · Video sync</span>
+          </div>
+        </article>
+        <article class="project-card" data-project="flux">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__content">
+            <h3>Flux Lab</h3>
+            <p>
+              Laboratorio creativo que revela prototipos mediante tarjetas que cambian de estado con efectos 3D y blur dinámico.
+            </p>
+            <span class="project-card__tag">GSAP Flip · Blur dinámico</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--light" id="estudio">
+      <div class="section__header">
+        <span class="subtitle">Sobre el estudio</span>
+        <h2>Un equipo micro, una visión macro</h2>
+      </div>
+      <div class="about">
+        <p>
+          NovaFrame nació como un microestudio para marcas que buscan diferenciarse con animaciones que se sienten naturales. Nos encanta
+          experimentar con GSAP, Three.js y tecnologías web emergentes para crear experiencias que se ven y se sienten increíbles.
+        </p>
+        <p>
+          Trabajamos codo a codo con directores creativos, agencias y startups para traducir conceptos en prototipos navegables y campañas listos para producción.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="footer__content">
+      <h2>¿Listo para colaborar?</h2>
+      <p>Cuéntanos sobre tu próximo proyecto y diseñemos la interacción perfecta.</p>
+      <a class="footer__cta" href="mailto:hola@novaframe.studio">hola@novaframe.studio</a>
+    </div>
+    <div class="footer__meta">
+      <span>© 2024 NovaFrame Studio</span>
+      <span>Ciudad de México · Remoto global</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-pY9wJd6tDrzZoKp/c3KgoF/sQvXqKAF1bMVmQfS4iigIvuXIvYtXPGxWD/CS9PG+D3vGU+vHkvEZnPuJASU+jQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-wZ7ZSlRpZUEHCYwUNwk4blNxfhp3G7Kc2GEHv6I/3HeJox3EsU1zsgCeym3H9Fvq1S8GuGZ56BximMOd2wQNmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-8AEMM2s1U9MGaIY0ukYKfoF3YpiTxrwGV0+Kuvrc/yishYqORdzdrIW6DCeU44yWiNysGEKMluSleqrs9jwELg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
